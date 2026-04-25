@@ -19,7 +19,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:monospace;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--primary-bg);
@@ -339,16 +339,15 @@ header {
 }
 
 .timeline-item {
-    padding: 2rem;
+    padding: 1.5rem;
     background: var(--primary-bg);
     margin-bottom: 1.5rem;
     border-left: 4px solid var(--accent-color);
     border-radius: 5px;
-    box-shadow: 0 2px 8px var(--shadow-color);
 }
 
 .timeline-item h4 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: var(--text-color);
     margin-bottom: 0.5rem;
 }
@@ -360,7 +359,96 @@ header {
 }
 
 .timeline-item p {
+    color: var(--text-color);
+}
+
+/* ===== Projects Menu (taken from the original Experience tab) ===== */
+.game-projects {
+    padding: 4rem 0;
+    background-color: var(--secondary-bg);
+}
+
+.game-projects h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.game-projects .projects-subtitle {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1rem;
     color: var(--text-secondary);
+}
+
+.projects-display {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.projects-display a {
+    text-decoration: none;
+}
+
+.projects-display-item {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 3rem;
+    align-items: center;
+
+    padding: 1.2rem;
+    background: var(--primary-bg);
+    margin-bottom: 1.5rem;
+    border-left: 4px solid var(--accent-color);
+    border-right: 4px solid var(--accent-color);
+    border-radius: 5px;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    box-shadow: 0 2px 8px var(--shadow-color);
+    text-decoration: none;
+}
+
+.projects-display-item img {
+    max-width: 200px;
+    padding: 0;
+}
+
+.projects-display-item .subtext {
+    font-size: 1rem;
+    position: relative;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+
+}
+
+.projects-display-item .status-wip {
+    font-size: 1rem;
+    position: relative;
+    color:rgb(255, 222, 132);
+    margin-bottom: 0.5rem;
+
+}
+
+.projects-display-item .status-released {
+    font-size: 1rem;
+    position: relative;
+    color:rgb(188, 255, 233);
+    margin-bottom: 0.5rem;
+
+}
+
+.projects-display-item h4 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 0.1rem;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+
+.projects-display-item p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
 }
 
 /* ===== CTA Section ===== */
