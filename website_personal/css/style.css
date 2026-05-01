@@ -15,6 +15,7 @@
     --text-link:#a6c4ff;
     --text-link-visited:#7f9acf;
     --accent-color: #93a2c0;
+    --accent-color-dark: #2f3746;
     --accent-hover: rgb(14, 60, 109);
     --border-color: #666;
     --shadow-color: rgba(0, 0, 0, 0.3);
@@ -90,7 +91,7 @@ header {
 }
 
 .btn-primary {
-    background-color: var(--accent-color);
+    background-color: var(--accent-color-dark);
     color: var(--text-color);
 }
 
@@ -485,7 +486,7 @@ header {
 
 /* ===== osu Skin Display ===== */
 .skin-display {
-    padding: 4rem 0;
+    padding: 2rem 0;
     background-color: var(--primary-bg);
 }
 
@@ -525,21 +526,28 @@ header {
 .screenshot-display-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    gap: 1rem;
     align-items: center;
 }
 
 .screenshot-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 3rem;
     align-items: center;
+}
+
+.screenshot-display-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 
 /* ===== CTA Section ===== */
 .cta {
-    background: linear-gradient(135deg, var(--accent-color) 0%, var(--primary-bg) 100%);
+    background: var(--secondary-bg);
     color: var(--text-color);
     padding: 3rem 0;
     text-align: center;
@@ -640,32 +648,6 @@ header {
 
 .social-icons a:hover {
     color: var(--accent-hover);
-}
-
-/* ===== Map Placeholder ===== */
-.map-section {
-    padding: 4rem 0;
-    background-color: var(--secondary-bg);
-}
-
-.map-section h3 {
-    text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    color: var(--text-color);
-}
-
-.map-placeholder {
-    width: 100%;
-    height: 400px;
-    background-color: var(--tertiary-bg);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-muted);
-    font-size: 1.1rem;
-    border: 2px dashed var(--border-color);
 }
 
 /* ===== Footer ===== */
