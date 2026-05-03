@@ -296,7 +296,7 @@ header {
 
 .about-text h3,
 .FAQ h2 {
-    font-size: 1.5rem;
+        font-size: 1.5rem;
     margin: 1.5rem 0 1rem;
     color: var(--text-color);
 }
