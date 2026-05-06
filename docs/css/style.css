@@ -177,6 +177,12 @@ header {
     color: var(--text-secondary);
 }
 
+.changable-text {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+}
+
+
 /* ===== Featured & Portfolio Grid ===== */
 .featured,
 .portfolio-grid-section {
