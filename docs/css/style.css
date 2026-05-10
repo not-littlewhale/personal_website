@@ -19,6 +19,11 @@
     --accent-hover: rgb(14, 60, 109);
     --border-color: #666;
     --shadow-color: rgba(0, 0, 0, 0.3);
+
+    --project-status-wip: rgb(255, 222, 132);
+    --project-status-testing: rgb(188, 255, 233);
+    --project-status-released: rgb(206, 255, 206);
+
 }
 
 body {
@@ -463,7 +468,7 @@ header {
 .projects-display-item .status-wip {
     font-size: 1rem;
     position: relative;
-    color:rgb(255, 222, 132);
+    color: var(--project-status-wip);
     margin-bottom: 0.5rem;
 
 }
@@ -471,7 +476,7 @@ header {
 .projects-display-item .status-released {
     font-size: 1rem;
     position: relative;
-    color:rgb(188, 255, 233);
+    color: var(--project-status-released);
     margin-bottom: 0.5rem;
 
 }
@@ -488,6 +493,53 @@ header {
 .projects-display-item p {
     color: var(--text-secondary);
     margin-bottom: 1rem;
+}
+
+.intro-list {
+    list-style: none;
+    padding: 0;
+}
+
+.intro-list li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--text-color);
+}
+
+.intro-list li .title {
+    color: var(--accent-color);
+}
+
+.intro-list li:link :active{
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--text-link);
+    
+}
+
+.intro-list li a {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--text-link);
+}
+
+
+.intro-list li a:visited{
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--text-link-visited);
+}
+
+.intro-list li:before {
+    content: ">";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: bold;
 }
 
 /* ===== osu Skin Display ===== */
@@ -544,6 +596,76 @@ header {
 }
 
 .screenshot-display-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Games Specific Pages Display ===== */
+.game-banner {
+    padding: 2rem 0;
+    background-color: var(--primary-bg);
+}
+
+.game-banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.introduction-text h3, .game-banner h3 {
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1rem;
+    color: var(--text-color);
+}
+
+.game-banner .subtitle {
+    font-size: 1rem;
+    position: relative;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+
+}
+
+.game-banner .subtitle {
+    font-size: 1rem;
+    position: relative;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.introduction-text .project-status-wip {
+    color: var(--project-status-wip);
+    margin-bottom: 1rem;
+}
+
+.introduction-text .project-status-testing {
+    color: var(--project-status-testing);
+    margin-bottom: 1rem;
+}
+
+.introduction-text .project-status-released {
+    color: var(--project-status-released);
+    margin-bottom: 1rem;
+}
+
+.game-page-grid {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.introduction-display-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.game-screenshot-grid img {
     width: 100%;
     height: auto;
     border-radius: 8px;
