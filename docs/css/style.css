@@ -39,6 +39,19 @@ body {
     padding: 0 20px;
 }
 
+a {
+    color: var(--text-link);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--text-link-visited);
+}
+
+a:hover {
+    color: var(--accent-hover);
+}
+
 /* ===== Header & Navigation ===== */
 header {
     background-color: var(--secondary-bg);
@@ -639,23 +652,26 @@ header {
 .introduction-text .project-status-wip {
     color: var(--project-status-wip);
     margin-bottom: 1rem;
+    border-radius: 8px;
 }
 
 .introduction-text .project-status-testing {
+    border-radius: 8px;
     color: var(--project-status-testing);
     margin-bottom: 1rem;
 }
 
 .introduction-text .project-status-released {
+    border-radius: 8px;
     color: var(--project-status-released);
     margin-bottom: 1rem;
 }
 
 .game-page-grid {
     display: grid;
-    grid-template-columns: 5fr 1fr;
+    grid-template-columns: 2.5fr 1fr;
     gap: 3rem;
-    align-items: center;
+    align-items: baseline;
 }
 
 .introduction-display-grid {
@@ -668,6 +684,7 @@ header {
 .game-screenshot-grid img {
     width: 100%;
     height: auto;
+    margin-top: 1rem;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
